@@ -1,17 +1,12 @@
 // реализация функции for each
-const myArray = [1, 2, 3];
-function consoleOut(num) {
-  console.log(num);
-  return num;
-}
 function forEach(arr, callback) {
   for (let i = 0; i < arr.length; i++) {
-    callback(arr[i]);
+    callback(arr[i], i);
   }
 }
-forEach(myArray, consoleOut);
-
-
+forEach([1, 2, 5, 8], function (num, i) {
+  console.log("Element: " + num + ", index: " + i);
+});
 
 
 
