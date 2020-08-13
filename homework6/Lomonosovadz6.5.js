@@ -1,16 +1,15 @@
 // every
-const array = [2, 6, 8, 4];
-function isEven(num) {
-  console.log(num % 2 === 0);
-  return num;
-}
+const array = [1, 2, 4, 4];
 
 function every(arr, callback) {
   for (let i = 0; i < arr.length; i++) {
-    if (callback(arr[i])) {
-      return true;
+    if (!callback(arr[i])) {
+      return false;
     }
   }
-  return false;
+  return true;
 }
-every(array, isEven)
+const Even = every(array, function (elem) {
+  return elem % 2 === 0;
+});
+console.log(Even);
