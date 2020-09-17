@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .form,
+    .list_container {
+      width: 350px;
+      margin-bottom: 10px;
+      list-style: none;
+    }
+
+    .form {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 7px 5px;
+      font-weight: bold;
+      color: indigo;
+      
+    }
+ .username {
+      flex-grow: 1.7;
+    }
+    .UsersList_item {
+      border: 1px solid rgba(69, 7, 105, 0.616) ;
+      margin: 4px 0;
+      padding: 9px;
+      display: flex;
+      align-items: center;
+      background-color: rgb(9, 214, 221);
+    }
+.UsersList_item:nth-child(1){
+  background-color: rgb(82, 186, 204);
+}
+    .UsersList_item:nth-child(2) {
+      background-color: #b32ea1fa;
+    }
+.UsersList_item:nth-child(3){
+  background-color: hotpink;
+}
+.UsersList_item:nth-child(4){
+  background-color: rgb(222, 240, 66);
+}
+  </style>
+</head>
+
+<body>
+  <div id='wrapper'></div>
+  <script src="script.11.js"></script>
+</body>
+
+</html>
