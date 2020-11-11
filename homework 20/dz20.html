@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <style>
+        body {
+
+            font-weight: bold;
+            font-size: 18px;
+            font-family: cursive;
+
+
+        }
+
+        div.user {
+            width: 189px;
+            margin-top: 5px;
+            margin-left: 10px;
+            background-color: white;
+
+            height: auto;
+            color: darkblue;
+
+            border-radius: 10%;
+            margin-bottom: 7px;
+
+        }
+
+        div.bot {
+            margin-left: 40px;
+
+            height: auto;
+
+            background-color: rgb(201, 145, 219);
+            color: black;
+            width: 189px;
+            border-radius: 10%;
+            margin-bottom: 10px;
+            word-wrap: break-word;
+        }
+
+        #main {
+
+            height: 500px;
+
+            width: 300px;
+            border: 0px solid #421;
+            background-image: url(imgs/5ab87449063d816260863d42.jpg);
+            background-repeat: no-repeat;
+            overflow-y: auto;
+
+        }
+
+        input {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            top: 85%;
+            padding: 30px;
+            border: 0;
+
+        }
+
+        button {
+            position: fixed;
+            border-radius: 30%;
+            top: 85%;
+            right: 77%;
+            background-color: rgba(89, 54, 170, 0.548);
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <form name="message">
+
+        <button type="submit">Send</button>
+        <input id="input" type="text" placeholder="Say something...">
+        <div id="main">
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+    <script src="dz20.js"></script>
+</body>
+
+</html>
